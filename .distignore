@@ -60,3 +60,5 @@ wp-textdomain.js
 DOCKER_ENV
 docker_tag
 output.log
+
+release
