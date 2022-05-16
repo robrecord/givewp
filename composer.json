@@ -12,7 +12,7 @@
         "kjohnson/format-object-list": "^0.1.0",
         "fakerphp/faker": "^1.9",
         "myclabs/php-enum": "^1.6",
-        "symfony/http-foundation": "^3.4",
+        "symfony/http-foundation": "^5.4",
         "moneyphp/money": "v3.3.1"
     },
     "require-dev": {
@@ -41,7 +41,7 @@
         ],
         "bundle": [
             "@copy-fonts",
-            "rsync -rc --exclude-from=.distignore . release/ --delete --delete-excluded"
+            "rsync -rc --exclude-from=.distignore ./ release/ --delete --delete-excluded"
         ],
         "copy-fonts": "rm -rf vendor/tecnickcom/tcpdf/fonts/* && cp assets/src/tcpdf-fonts/* vendor/tecnickcom/tcpdf/fonts/"
     },
@@ -55,7 +55,7 @@
     },
     "config": {
         "platform": {
-            "php": "5.6.40"
+            "php": "7.2.5"
         },
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true,
